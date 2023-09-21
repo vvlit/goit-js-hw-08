@@ -14,7 +14,7 @@ form.addEventListener("input", throttle(saveInputDataToLocalStorage, 500));
 form.addEventListener("submit", clearFormAndStorage);
 
 function saveInputDataToLocalStorage(event) {
-    inputData = {
+    const inputData = {
         email: form.elements.email.value,
         message: form.elements.message.value
     };
